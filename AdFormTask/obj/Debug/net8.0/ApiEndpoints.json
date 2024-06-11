@@ -17,7 +17,7 @@
   },
   {
     "ContainingType": "AdFormTask.Controllers.SquaresController",
-    "Method": "DeletePoint",
+    "Method": "DeleteCoordinatePoint",
     "RelativePath": "Squares",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -43,7 +43,7 @@
   },
   {
     "ContainingType": "AdFormTask.Controllers.SquaresController",
-    "Method": "AddCoordinate",
+    "Method": "PutCoordinate",
     "RelativePath": "Squares",
     "HttpMethod": "PUT",
     "IsController": true,

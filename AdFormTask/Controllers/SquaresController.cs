@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http.Timeouts;
 using Microsoft.AspNetCore.Mvc;
+using AdFormTask.Models;
+using AdFormTask.Services;
 
 namespace AdFormTask.Controllers
 {
@@ -8,8 +10,26 @@ namespace AdFormTask.Controllers
     [RequestTimeout(5000)]
     public class SquaresController : Controller
     {
+        private SquareService squareService;
+        public SquaresController(SquareService squareService)
+        {
+            this.squareService = squareService;
+        }
         // !!!!!TEST COORDINATES!!!!!
         // [(-1;1), (1;1), (1;-1), (-1;-1)]
+        [HttpGet]
+        public IActionResult GetSquares(string pointsString)
+        {
+            List<string> squareCoordinates = new List<string>();
+            pointsString = squareService.FormatPointString(pointsString);
+            string[] coordinates = pointsString.Split(", ");
+            List<Point> points = squareService.GetPoints(coordinates);
+            return Ok(new
+            {
+                squaresCoordinates = squareCoordinates,
+                squaresCount = squareCoordinates.Count
+            });
+        }
 
         [HttpDelete]
         public IActionResult DeleteCoordinatePoint(string pointsString, int x, int y) 
@@ -44,10 +64,10 @@ namespace AdFormTask.Controllers
         [HttpPut]
         public IActionResult PutCoordinate(string pointsString, int x, int y)
         {
-            string newPointsString = pointsString.Insert(pointsString.Length - 1, ", (" + x.ToString() + ";" + y.ToString() + ")");
+            pointsString = pointsString.Insert(pointsString.Length - 1, ", (" + x.ToString() + ";" + y.ToString() + ")");
             return Ok(new 
             {
-                newPointsString = newPointsString
+                newPointsString = pointsString
             });
         }
     }

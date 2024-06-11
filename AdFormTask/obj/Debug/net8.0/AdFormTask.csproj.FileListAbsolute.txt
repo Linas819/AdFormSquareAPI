@@ -30,3 +30,4 @@ C:\Users\Linas\source\repos\AdFormTask\AdFormTask\obj\Debug\net8.0\refint\AdForm
 C:\Users\Linas\source\repos\AdFormTask\AdFormTask\obj\Debug\net8.0\AdFormTask.pdb
 C:\Users\Linas\source\repos\AdFormTask\AdFormTask\obj\Debug\net8.0\AdFormTask.genruntimeconfig.cache
 C:\Users\Linas\source\repos\AdFormTask\AdFormTask\obj\Debug\net8.0\ref\AdFormTask.dll
+C:\Users\Linas\source\repos\AdFormTask\AdFormTask\obj\Debug\net8.0\AdFormTask.sourcelink.json
