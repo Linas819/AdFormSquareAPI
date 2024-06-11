@@ -1,0 +1,70 @@
+[
+  {
+    "ContainingType": "AdFormTask.Controllers.SquaresController",
+    "Method": "GetSquares",
+    "RelativePath": "Squares",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pointsString",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AdFormTask.Controllers.SquaresController",
+    "Method": "DeletePoint",
+    "RelativePath": "Squares",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pointsString",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "x",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "y",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AdFormTask.Controllers.SquaresController",
+    "Method": "AddCoordinate",
+    "RelativePath": "Squares",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pointsString",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "x",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "y",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
