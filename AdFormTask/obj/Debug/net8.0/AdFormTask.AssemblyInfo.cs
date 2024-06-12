@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdFormTask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1518844cb83905e7b627083d4c62f6c19550d820")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+881564e7dc36a60d605ea45924cf59f62965aa0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdFormTask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdFormTask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
